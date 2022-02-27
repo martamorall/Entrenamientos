@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marta Moral"/>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <title>YourTracks</title>
+</head>
+
+<body>
+    <!-- Menú -->
+    <nav>
+        <ul>
+            <li style="display:inline;"><a id="titulo" href="index.html"><img id="favicon" src="img/favicon.png" title="YourTracks" alt="icono">YourTracks</a></li>
+            <li><a href="registrarse.html">Registrarse</a></li>
+            <li><a href="#miModal" id="enlaceLogin">Login</a>
+                <div id="miModal" class="modal">
+                  <div class="modal-contenido">
+                    <a href="#">X</a>
+                    <h4>Login</h4>
+                    <table>
+                        <tr>
+                            <td><i class="fas fa-user" id="user"></i></td>
+                            <td><input type="text" name="username" id="usuario"></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-lock" id="key"></i></td>
+                            <td><input type="password" name="password" id="contraseña"><br></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <input type="submit" id="bEnviar" value="Enviar" onclick="window.location.href='tuespacio.html'">
+                </table>
+                  </div>  
+                </div></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Banner principal -->
+        <section class="principal">
+            <div>
+                <h2 style="margin-left:0%;">YourTracks</h2>
+                <p>Con la app YourTracks podrás controlar tus entrenamientos,</p>
+                <p>visualizar tus rutas y mejorar tu rendimiento.</p>
+                <p>¡Únete a YourTracks!</p>
+                <br>
+                <p>Descubre y personaliza tu espacio personal</p>
+                <p>con tan solo registrarte.</p>
+                <button><a href="registrarse.html">Registrarse</a></button>
+            </div>
+        </section>
+
+        <!-- Banner mapa -->
+        <section class="mapa">
+            <div>
+                <p>Inicia tus rutas desde cualquier punto de la ciudad.</p>
+                <p>Puede que el principio sea lo más duro,</p>
+                <p>pero déjate llevar y disfruta.</p>
+            </div>
+        </section>
+
+        <!-- Opiniones de usuarios -->
+        <section class="opinion">
+            <article>
+                <img src="img/avatar1.jpg" title="avatar" alt="avatar">
+                <div class="secundaria">
+                    <h3>Sarah Jones</h3>
+                    <p>Miembro desde 2022</p>
+                    <span>⭐⭐⭐⭐</span>
+                    <div>
+                        Desde que tengo YourTracks, salgo más a correr y puedo
+                        compartir mis rutas con mis amigos para que en algún
+                        momento se unan a mi entrenamiento. ¡Estoy muy contenta!
+                    </div>
+                </div>
+            </article>
+            <article>
+                <img src="img/avatar2.jpg" title="avatar" alt="avatar">
+                <div class="secundaria">
+                    <h3>John Doe</h3>
+                    <p>Miembro desde 2022</p>
+                    <span>⭐⭐⭐</span>
+                    <div>
+                        Gracias a YourTracks, ya no tengo que escribir en la app
+                        de notas los km, la distancia y el tiempo cuando salgo a
+                        hacer footing. A golpe de vista tienes todos tus datos.
+                        ¡Increíble!
+                    </div>
+                </div>
+            </article>
+            <article>
+                <img src="img/avatar3.jpg" title="avatar" alt="avatar">
+                <div class="secundaria">
+                    <h3>Emily Clark</h3>
+                    <p>Miembro desde 2022</p>
+                    <span>⭐⭐⭐⭐⭐</span>
+                    <div>
+                        Creo que YourTracks ha hecho que me levante del sofá
+                        cada tarde para mover el cuerpo y sentirme más agusto
+                        conmigo misma física y mentalmente. ¡La recomiendo!
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Ubicación en mapa -->
+        <section class="mapa-contacto">
+            <h3>Nos puedes encontrar en 11 Rue de la Huchette, 75005 París </h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5562.933581602188!2d2.34625877928546!3d48.85142434590427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671e0eec3c81b%3A0xdd3579ae1ee8d065!2sYourtracks!5e0!3m2!1ses!2ses!4v1645894407958!5m2!1ses!2ses" width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div id="contenedor-footer">
+            <div>
+                <p>Aviso legal</p>
+                <a href="cookies/miPagina.html">Política de cookies</a>
+                <p>Política de privacidad</p>
+                <p>Protección de datos</p>
+            </div>
+            <div class="redes">
+                <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="img/instagram.png"
+                        id="instagram" title="instagram" alt="instagram"/></a>
+                <a href="https://es-es.facebook.com/" target="_blank"><img src="img/facebook.png" id="facebook" title="facebook" alt="facebook"/></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"><img src="img/twitter.png" id="twitter" title="twitter" alt="twitter"/></a>
+            </div>
+            <div class="copyright">
+                <p>© 2022, YourTracks</p>
+                <a href="mailto:info@yourtracks.es" style="margin:0px;">info@yourtracks.es</a>
+                <p>Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+  
+</body>
+<script src="js/funciones.js"></script>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marta Moral"/>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/registro.css">
+    <link rel="icon" href="img/favicon.png">
+    <title>Registrarse</title>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h2 style="display:inline;"><a id="titulo" href="index.html"><img id="favicon" src="img/favicon.png">YourTracks</a></h2>
+    </header>
+    <h3>Registro</h3>
+    <aside>
+        <!-- Formulario datos personales -->
+        <fieldset>
+            <legend>DATOS PERSONALES</legend>
+            <table>
+                <tr>
+                    <td>Nombre y apellidos </td>
+                    <td><input type="text" required></td>
+                </tr>
+                <tr>
+                    <td>Nombre de usuario </td>
+                    <td><input type="text" required></td>
+                </tr>
+                <tr>
+                    <td>Correo electrónico </td>
+                    <td><input type="email" required></td>
+                </tr>
+                <tr>
+                    <td>Contraseña </td>
+                    <td><input type="password" required></td>
+                </tr>
+                <tr>
+                    <td>Estatura </td>
+                    <td><input type="number" min="100" max="230"></td>
+                </tr>
+                <tr>
+                    <td>Peso</td>
+                    <td><input type="number" min="20" max="250"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <!-- Formulario zonas de frecuencia-->
+            <legend>ZONAS DE FRECUENCIA</legend>
+            <table>
+                <tr>
+                    <td>
+                        Sprint
+                    </td>
+                    <td><input type="number" min="35" max="220" required="true"></td>
+                </tr>
+                <tr>
+                    <td>
+                        Velocidad
+                    </td>
+                    <td><input type="number" min="35" max="220" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        Cardio
+                    </td>
+                    <td><input type="number" min="35" max="220" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        Fitness
+                    </td>
+                    <td><input type="number" min="35" max="220" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        Sencillo
+                    </td>
+                    <td><input type="number" min="35" max="220" required></td>
+                </tr>
+            </table>
+        </fieldset>
+        
+        <fieldset>
+            <!-- Formulario tipo de corredor -->
+            <legend>TIPO DE CORREDOR</legend>
+            <table>
+                <tr>
+                    <td>Corredor casual</td>
+                </tr>
+                <tr>
+                    <td>
+                        Corredor de medio fondo
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>5km</li>
+                        </ul>
+                    </td>
+                    <td><input type="number" min="0"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>10km</li>
+                        </ul>
+                    </td>
+                    <td><input type="number" min="0"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>media maratón</li>
+                        </ul>
+                    </td>
+                    <td><input type="number" min="0"></td>
+                </tr>
+                <tr>
+                    <td>
+                        Corredor de fondo
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>media maratón</li>
+                        </ul>
+                    </td>
+                    <td><input type="number" min="0"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>maratón</li>
+                        </ul>
+                    </td>
+                    <td><input type="number" min="0"></td>
+                </tr>
+                <tr>
+                    <td>
+                        Corredor de trail: carrera más larga
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>nombre</li>
+                        </ul>
+                    </td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>distancia</li>
+                        </ul>
+                    </td>
+                    <td><input type="number" min="0"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>desnivel
+                            <li>
+                        </ul>
+                    </td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>tiempo
+                            <li>
+                        </ul>
+                    </td>
+                    <td><input type="number" min="0"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </aside>
+    <br><button onclick="alert('Te has registrado correctamente'); window.location.href='index.html'">Enviar</button>
+</body>
+
+</html>

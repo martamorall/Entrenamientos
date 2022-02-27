@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marta Moral"/>
+    <link rel="stylesheet" href="css/espacio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <title>Tu espacio</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h2><a href="index.html"><img id="favicon" src="img/favicon.png" title="icono" alt="icono">YourTracks</a></h2>
+        <i class="fas fa-sign-out-alt" onclick="window.location.href='index.html'"></i>
+    </header>
+    <main>
+        <!-- Título de bienvenida -->
+        <header>
+            <h3>Bienvenido/a/e</h3>
+        </header>
+
+        <section class="general">
+            <!-- Área personal -->
+            <article class="personal">
+                <img id="avatar" src="img/avatar1.jpg" title="avatar" alt="avatar">
+                <div class="secundaria">
+                    <h3>Sarah Jones</h3>
+                    <p>Miembro desde 2022</p>
+                    <span>120 amigos</span>
+                    <hr>
+                    <p>Peso: 63kg</p>
+                    <p>Estautura: 1,70m</p>
+                    <span class="mi-archivo">
+                    <input type="file" id="mi-archivo" hidden>
+                    </span>
+                    <label for="mi-archivo">
+                        <span><i class="fas fa-download"></i> Subir entreno</span>
+                    </label>
+                    <br><textarea placeholder="Ejercicios pendientes"></textarea><br>
+
+                </div>
+            </article>
+
+            <!-- Entrenamientos -->
+            <article class="entrenamiento">
+                <h3>Entrenamiento Central NYC</h3>
+                <div>
+                    <h4>Semana 31-enero a 6-febrero</h4>
+                    <p>Km totales: 70,3</p>
+                    <div>
+                        <h4>Actividades</h4>
+                        <ol>
+                            <li>Trail running <a href="#myTrail"><i class="fas fa-eye"></i></a>
+                                <div id="myTrail" class="myTrail">
+                                    <div class="myTrail-modal-content">
+                                        <a href="#">X</a>
+                                        <h4>Trail running</h4>
+                                        <div>
+                                            <p><i class="fas fa-route"></i> 9km</p>
+                                            <p><i class="fas fa-stopwatch"></i> 1h:50m</p>
+                                            <p><i class="fas fa-running"></i> 11min/km</p>
+                                            <p><i class="fas fa-heartbeat"></i> 124 pulsaciones</p>
+                                            <p><i class="far fa-sun"></i> 1342 calorías</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>Footing <a href="#myFooting"><i class="fas fa-eye"></i></a>
+                                <div id="myFooting" class="myFooting">
+                                    <div class="myFooting-modal-content">
+                                        <a href="#">X</a>
+                                        <h4>Footing</h4>
+                                        <div>
+                                            <p><i class="fas fa-route"></i> 3km</p>
+                                            <p><i class="fas fa-stopwatch"></i> 55m</p>
+                                            <p><i class="fas fa-running"></i> 18min/km</p>
+                                            <p><i class="fas fa-heartbeat"></i> 100 pulsaciones</p>
+                                            <p><i class="far fa-sun"></i> 765 calorías</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>Hiking <a href="#myHiking"><i class="fas fa-eye"></i></a>
+                                <div id="myHiking" class="myHiking">
+                                    <div class="myHiking-modal-content">
+                                        <a href="#">X</a>
+                                        <h4>Hiking</h4>
+                                        <div>
+                                            <p><i class="fas fa-route"></i> 12km</p>
+                                            <p><i class="fas fa-stopwatch"></i> 3h:44m</p>
+                                            <p><i class="fas fa-running"></i> 25min/km</p>
+                                            <p><i class="fas fa-heartbeat"></i> 89 pulsaciones</p>
+                                            <p><i class="far fa-sun"></i> 1400 calorías</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>Maratón <a href="#myMarathon"><i class="fas fa-eye"></i></a>
+                                <div id="myMarathon" class="myMarathon">
+                                    <div class="myMarathon-modal-content">
+                                        <a href="#">X</a>
+                                        <h4>Maratón</h4>
+                                        <div>
+                                            <p><i class="fas fa-route"></i> 21km</p>
+                                            <p><i class="fas fa-stopwatch"></i> 4h:35m</p>
+                                            <p><i class="fas fa-running"></i> 33min/km</p>
+                                            <p><i class="fas fa-heartbeat"></i> 165 pulsaciones</p>
+                                            <p><i class="far fa-sun"></i> 2698 calorías</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="img/ruta1.png" title="ruta Central NYC" alt="central NYC">
+                            <figcaption>Ruta desde Central Park a McCarren Park</figcaption>
+                        </figure>
+                    </div>
+                    <span class="redes">
+                        <img src="img/thumbs-up-regular.svg" title="pulgar" alt="pulgar" onclick="this.src='img/thumbs-up-solid.svg'">
+                        <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="img/instagram.png"
+                                id="instagram" title="instagram" alt="instagram"/></a>
+                        <a href="https://es-es.facebook.com/" target="_blank"><img src="img/facebook.png"
+                                id="facebook" title="facebook" alt="facebook"/></a>
+                        <a href="https://twitter.com/?lang=es" target="_blank"><img src="img/twitter.png"
+                                id="twitter" title="twitter" alt="twitter"/></a>
+                    </span>
+                </div>
+            </article>
+
+            <article class="entrenamiento">
+                <h3>Entrenamiento Outer NYC</h3>
+                <div>
+                    <h4>Semana 24-enero a 30-enero</h4>
+                    <p>Km totales: 16,5</p>
+                    <div>
+                        <h4>Actividades</h4>
+                        <ol>
+                            <li>Footing <a href="#myFooting"><i class="fas fa-eye"></i></a>
+                                <div id="myFooting" class="myFooting">
+                                    <div class="myFooting-modal-content">
+                                        <a href="#">X</a>
+                                        <h4>Footing</h4>
+                                        <div>
+                                            <p><i class="fas fa-route"></i> 4,5km</p>
+                                            <p><i class="fas fa-stopwatch"></i> 1h:22m</p>
+                                            <p><i class="fas fa-running"></i> 37min/km</p>
+                                            <p><i class="fas fa-heartbeat"></i> 144 pulsaciones</p>
+                                            <p><i class="far fa-sun"></i> 1339 calorías</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>Hiking <a href="#myHiking"><i class="fas fa-eye"></i></a>
+                                <div id="myHiking" class="myHiking">
+                                    <div class="myHiking-modal-content">
+                                        <a href="#">X</a>
+                                        <h4>Hiking</h4>
+                                        <div>
+                                            <p><i class="fas fa-route"></i> 11km</p>
+                                            <p><i class="fas fa-stopwatch"></i> 3h:22m</p>
+                                            <p><i class="fas fa-running"></i> 25min/km</p>
+                                            <p><i class="fas fa-heartbeat"></i> 90 pulsaciones</p>
+                                            <p><i class="far fa-sun"></i> 762 calorías</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="img/ruta2.png" title="ruta Outer NYC" alt="outer NYC">
+                            <figcaption>Ruta desde Liberty State Park a Liberty Science Center</figcaption>
+                        </figure>
+                    </div>
+                    <span class="redes">
+                        <img src="img/thumbs-up-regular.svg" title="pulgar" alt="pulgar" onclick="this.src='img/thumbs-up-solid.svg'">
+                        <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="img/instagram.png"
+                                id="instagram" title="instagram" alt="instagram"/></a>
+                        <a href="https://es-es.facebook.com/" target="_blank"><img src="img/facebook.png"
+                                id="facebook" title="facebook" alt="facebook"/></a>
+                        <a href="https://twitter.com/?lang=es" target="_blank"><img src="img/twitter.png"
+                                id="twitter" title="twitter" alt="twitter"/></a>
+                    </span>
+                </div>
+            </article>
+
+            <!-- Gráficas de salud -->
+            <article class="graficas">
+                <div>
+                    <figure>
+                        <img src="img/grafica.png" title="grafica salud" alt="saludo">
+                        <figcaption>Gráfica de salud running</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/grafica2.png" title="grafica intensidad" alt="intensidad">
+                        <figcaption>Gráfica de medición de intensidad</figcaption>
+                    </figure>
+                </div>
+
+            </article>
+
+            <!-- Calendario de eventos -->
+            <article class="calendario">
+                <div class="calendar">
+                    <div class="date">
+                        <h3>Febrero</h3>
+                        <div class="days">
+                            <div class="day" style="color:black; font-weight:lighter;">L</div>
+                            <div class="day">M</div>
+                            <div class="day">X</div>
+                            <div class="day">J</div>
+                            <div class="day">V</div>
+                            <div class="day">S</div>
+                            <div class="day" style="color:#f44336; font-weight:bold;">D</div>
+                            <div class="number"></div>
+                            <div class="number">1</div>
+                            <div class="number">2</div>
+                            <div class="number">3</div>
+                            <div class="number">4</div>
+                            <div class="number">5</div>
+                            <div class="number active" onclick="evento1.style.transform='scale(1.1)';">6</div>
+                            <div class="number">7</div>
+                            <div class="number">8</div>
+                            <div class="number">9</div>
+                            <div class="number">10</div>
+                            <div class="number">11</div>
+                            <div class="number active" onclick="evento2.style.transform='scale(1.1)';">12</div>
+                            <div class="number">13</div>
+                            <div class="number">14</div>
+                            <div class="number">15</div>
+                            <div class="number">16</div>
+                            <div class="number">17</div>
+                            <div class="number">18</div>
+                            <div class="number">19</div>
+                            <div class="number">20</div>
+                            <div class="number">21</div>
+                            <div class="number">22</div>
+                            <div class="number">23</div>
+                            <div class="number">24</div>
+                            <div class="number">25</div>
+                            <div class="number">26</div>
+                            <div class="number active" onclick="evento3.style.transform='scale(1.1)';">27</div>
+                            <div class="number">28</div>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="img/febrero.jpg" title="Calendario" alt="calendario">
+                    </div>
+                </div>
+                <div class="evento" id="evento1">
+                    <h4>Gor Hard or Go Home Half Marathon</h4>
+                    <div>
+                        <img src="img/goHard.png" title="maratón Go Hard or Go Home" alt="go Hard">
+                        <p>6 de febrero a las 7:30 am</p>
+                        <p>21km</p>
+                        <img class="ruta" src="img/goHardRoute.png" title="ruta Go Hard or Go Home" alt="ruta go Hard">
+                    </div>
+                </div>
+                <div class="evento" id="evento2">
+                    <h4>V-Day Half</h4>
+                    <div>
+                        <img src="img/v-day.png" title="carrera V-day" alt="V-day">
+                        <p>12 de febrero a las 9:30 am</p>
+                        <p>5km</p>
+                        <img class="ruta" src="img/v-dayRoute.png" title="ruta V-day" alt="ruta V-day">
+                    </div>
+                </div>
+                <div class="evento" id="evento3">
+                    <h4>NYCRUNS Central Park Half Marathon & 5K</h4>
+                    <div>
+                        <img src="img/centralPark.png" title="maratón Central Park" alt="Central Park">
+                        <p>27 de febrero a las 8:30 am</p>
+                        <p>21km</p>
+                        <img class="ruta" src="img/centralParkRoute.png" title="ruta Central Park" alt="ruta Central Park">
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <script src="js/funciones.js"></script>
+</body>
+
+</html>
